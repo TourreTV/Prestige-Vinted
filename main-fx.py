@@ -1,11 +1,8 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-import re
 from time import sleep
 from discord_webhook import DiscordWebhook, DiscordEmbed
-import requests
-import pandas as pd
 from selenium.webdriver.common.by import By
+from pyvirtualdisplay import Display
 
 def advance():
     usr = driver.find_element(By.XPATH, '//*[contains(@id, "Catalog-react-component")]')
@@ -57,13 +54,11 @@ def research_and_scrape(query, price, end_page=2):
         data = scrape_research_page(search_url)
     return (data)  # Everything went good
 
-#os.chdir("C:\\Users\\Sébastien CARARO\\Desktop\\Vinted\\Data")
 global driver
+display = Display(visible=0,size=(1024,768))
+display.start()
 options = webdriver.FirefoxOptions()
-#options.set_preference("dom.webnotifications.serviceworker.enabled", False)
-#options.set_preference("dom.webnotifications.enabled", False)
-options.add_argument('--headless')
-
+options.add_argument("headless")
 driver = webdriver.Firefox(options=options)
 
 class Bot():
