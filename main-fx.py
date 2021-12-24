@@ -70,8 +70,8 @@ class Bot():
         self.nblogs = 10  #Logs toutes les combien de fois. (10 ici)
 
         #DISCORD
-        self.wh = 'https://discord.com/api/webhooks/923727649904418847/0Gx8UFdoz2s51cofXPZjwLClw1J4jQLCkP6iMEUtemvEuX5RrdmjH2QMWLbQTev1Z_Bs'
-        self.whlogs = 'https://discord.com/api/webhooks/923728138444365824/_yMcWI_qrBU8RM7KCrxuOlklu8PmbVp9TgP6V6acTOFz24FkUsVAEbMJ5KlEy8OyUcN7'
+        self.wh = 'https://discord.com/api/webhooks/924077725268996146/jOkOYNfKcB24q1F11APCgmC7YnFUPt48PmrtSUoAO0_9RoIUVWjK1bBH0Kwg0d4jZm52'
+        self.whlogs = 'https://discord.com/api/webhooks/924077422628978729/nJalnOaPtC1LJoTmyG-yKA8b2tkfOBoAz6UQpKofk2XFQwctkz6zs5kNl54zcBUesSOo'
 
         #TELEGRAM
         self.token = '1474222921:AAELAQiydgFOn05cJvxVc44qVeK9WMsaS2k'
