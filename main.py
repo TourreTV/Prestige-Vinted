@@ -75,14 +75,14 @@ class Bot():
         self.nblogs = 10  #Logs toutes les combien de fois. (10 ici)
 
         #DISCORD
-        self.wh = 'https://discord.com/api/webhooks/923727649904418847/0Gx8UFdoz2s51cofXPZjwLClw1J4jQLCkP6iMEUtemvEuX5RrdmjH2QMWLbQTev1Z_Bs'
-        self.whlogs = 'https://discord.com/api/webhooks/923728138444365824/_yMcWI_qrBU8RM7KCrxuOlklu8PmbVp9TgP6V6acTOFz24FkUsVAEbMJ5KlEy8OyUcN7'
+        self.wh = ''
+        self.whlogs = ''
 
         #TELEGRAM
-        self.token = '1474222921:AAELAQiydgFOn05cJvxVc44qVeK9WMsaS2k'
-        self.id = '1041095687'
+        self.token = ''
+        self.id = ''
 
-        #NE PAS MODIFIER.
+        #Tag : prix max.
         self.stores = {'pull ralph lauren' : [25], 'gilet ralph lauren' : [40],
                        'pull lacoste' : [30], 'pull champion' : [20], 'veste the north face' : [60]}
 
@@ -108,7 +108,7 @@ class Bot():
                 response = webhook.execute()
 
                 # TELEGRAM
-                self.mes = 'Vinted : '
+                self.mes = 'Vinted : '+self.scraped_data["title"]+' '+self.scraped_data["url"]
                 URL = f"https://api.telegram.org/bot{self.token}/sendMessage?chat_id={self.id}&text={self.mes}"
                 #dark = requests.get(URL)
             self.stores[i].append(self.scraped_data["url"])
