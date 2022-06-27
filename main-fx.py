@@ -67,17 +67,17 @@ class Bot():
 
         #CONFIG :
         self.logs = True  #True pour activer les logs discord du bot et False pour désactiver
-        self.nblogs = 10  #Logs toutes les combien de fois. (10 ici)
+        self.nblogs = 10  #Nombre d'itération pour envoyer le log. (10 ici)
 
         #DISCORD
-        self.wh = 'https://discord.com/api/webhooks/924077725268996146/jOkOYNfKcB24q1F11APCgmC7YnFUPt48PmrtSUoAO0_9RoIUVWjK1bBH0Kwg0d4jZm52'
-        self.whlogs = 'https://discord.com/api/webhooks/924077422628978729/nJalnOaPtC1LJoTmyG-yKA8b2tkfOBoAz6UQpKofk2XFQwctkz6zs5kNl54zcBUesSOo'
+        self.wh = '' #Webhook notifications discord
+        self.whlogs = '' #Webhook logs discord
 
         #TELEGRAM
-        self.token = '1474222921:AAELAQiydgFOn05cJvxVc44qVeK9WMsaS2k'
-        self.id = '1041095687'
+        self.token = ''
+        self.id = ''
 
-        #NE PAS MODIFIER.
+        #tag : prix max
         self.stores = {'pull ralph lauren' : [25], 'gilet ralph lauren' : [40],
                        'pull lacoste' : [30], 'pull champion' : [20], 'veste the north face' : [60]}
 
